@@ -5,7 +5,7 @@ In this coursework you will be making a Binary Search Tree template class.  As w
 
 Note that in answering these questions, you should not add any `#include` or `using` statements: you must implement the functionality yourself, without using any additional data structures from the standard library.  I have added `#include <memory>` for `std::unique_ptr`, `#include <utility>` for `std::pair`, and `#include <iostream>`.  If you have a convincing need for adding a different `#include` please post in the forum on KEATS.
 
-# Binary Search Trees, Main Part (7 marks)
+# Binary Search Trees, Main Part
 
 ## a) Making a tree node
 
@@ -129,7 +129,7 @@ To test your code, compile and run TestTreeMap.cpp.  A Makefile has been provide
 
 `make TestTreeMap`  
 
-# Binary Search Trees, Advanced Part [3 marks]
+# Binary Search Trees, Advanced Part
 
 ## An iterator
 
