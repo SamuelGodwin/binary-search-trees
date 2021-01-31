@@ -32,11 +32,11 @@ To test the code, compile and run TestTreeNode.cpp.  A Makefile has been provide
 
 In the file `tree.h` is a template class BinarySearchTree.  This uses the `TreeNode` class.
 
-### write
+### write()
 
 The function `write` takes an `ostream` reference and calls `write` on the root of the tree.
 
-### insert
+### insert()
 
 The function `insert` takes an item of data and inserts it into the tree:
 
@@ -47,7 +47,7 @@ In both cases, it should return a `TreeNode*`, pointing to the node containing t
 
 For each node, if it has a left child, then `left->data < data`, and if it has a right child, then `data < right->data`.
 
-### find
+### find()
 
 The function `find` takes an item of data and traverses the Binary Search Tree to see if the data is in the tree.
 
@@ -67,7 +67,7 @@ To test this code, compile and run TestTree.cpp.  A Makefile has been provided, 
 
 ### KeyValuePair
 
-In the file `treemap.h`, the incomplete class `KeyValuePair` defines a class that holds a key--value pair that will be used to make a map.
+In the file `treemap.h`, the class `KeyValuePair` defines a class that holds a key--value pair that will be used to make a map.
 
 ### TreeMap
 
@@ -89,7 +89,7 @@ To test this code, compile and run TestTreeMap.cpp.  A Makefile has been provide
 
 In `treenode.h` is a template class `TreeNodeIterator` that is an iterator over a binary search tree. This steps through the tree in ascending order.
 
-## maxDepth
+## maxDepth()
 
 In `TreeNode` is a function maxDepth that returns the maximum depth of the subtree rooted at that node. If the TreeNode has no children, it has depth 1.  Otherwise, its depth is 1 + the maximum of either the depth of its left child, or the depth of its right child.
 
