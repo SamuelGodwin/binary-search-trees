@@ -2,7 +2,8 @@
 
 A Binary Search Tree template class. 
 
-Note that I implement the functionality myself, without using too many additional data structures from the standard library.  I have added `#include <memory>` for `std::unique_ptr`, `#include <utility>` for `std::pair`, and `#include <iostream>`.
+Note that I implement the functionality myself, without using too many additional data structures from the standard library.
+I have added `#include <memory>` for `std::unique_ptr`, `#include <utility>` for `std::pair`, and `#include <iostream>`.
 
 ## Making a tree node
 
@@ -18,6 +19,8 @@ You should then be able to write, e.g:
 `someNode->write(cout);`  
 
 ...to be able to print the subtree starting at some node to screen. 
+
+## Usage
 
 To test the code, compile and run TestTreeNode.cpp.  A Makefile has been provided, run:
 
@@ -52,6 +55,8 @@ If it is, it returns a `TreeNode*` pointing to the node containing the data.
 
 If it is not in the tree, it returns `nullptr`
 
+## Usage
+
 To test this code, compile and run TestTree.cpp.  A Makefile has been provided, run:
 
 `make TestTree` 
@@ -69,6 +74,8 @@ In the file `treemap.h`, the incomplete class `KeyValuePair` defines a class tha
 In the file `treemap.h`, the class `TreeMap` defines a class that holds a tree of key--value pairs.
 
 The function `find` takes a Key, makes a KeyValuePair from it, and calls `find` on the tree to see if a match can be found.  If it can be found, it returns a pointer to the *data* inside the tree node found by find (a `KeyValuePair<Key,Value>*`). If not, returns nullptr.
+
+## Usage
 
 To test this code, compile and run TestTreeMap.cpp.  A Makefile has been provided, run:
 
@@ -123,6 +130,8 @@ If a node becomes unbalanced when a node is inserted into the right subtree of i
 ### Right-left rotation
 
 One scenario left: a node becomes unbalanced when a node is inserted into the left subtree of its right child, then we perform a right-left rotation.  
+
+## Usage
 
 To test this code, compile and run TestTreeD.cpp.  A Makefile has been provided, run:
 
